@@ -1,7 +1,9 @@
+###待完成的点：
 1.admin未加集群监控
 2.pom.xml文件包需要整理到父类
 3.zuul路由过于简单
 4.限流功能
-5.spring security
 6.权限管理后台
 7.第三方登录
+8.单点登录
+9.基础的mybatis,统一异常处理机制，spring security集成
