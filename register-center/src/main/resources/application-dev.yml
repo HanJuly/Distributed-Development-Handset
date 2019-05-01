@@ -1,0 +1,19 @@
+server:
+  port: ${dev.eureka.server.port}
+
+spring:
+  profiles: dev
+
+
+eureka:
+  environment: dev
+  datacenter: linux #部署位置
+  server:
+    enable-self-preservation: false  # 关闭自我保护
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${dev.eureka.server.port}/eureka/
+    registerWithEureka: false  # 单机模式 设置为false
+    fetchRegistry: false       # 单机模式 设置为false
+  instance:
+    hostname: ${dev.eureka.hostname}    # 指定该Eureka实例的主机名

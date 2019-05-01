@@ -1,0 +1,49 @@
+prod1:
+  eureka:
+    server:
+      port: 7501
+    hostname: eureka1.hw.com
+dev:
+  eureka:
+    server:
+      port: 7500
+    hostname: 127.0.0.1
+logging:
+  path: ./logs/config
+  file: ${logging.path}/root.log
+  common-pattern: '%d{yyyy-MM-dd HH:mm:ss.SSS}:[%5p] [%t:%r] [%C{1}:%M:%L] --> %m%n'
+  level:
+    console: INFO
+
+# 公共配置
+spring:
+  profiles:
+    active: dev
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/HanJuly/config-repo
+#          uri: https://gitee.com/zuihou111/zuihou-admin-cloud-config-repo
+          search-paths: '{application}'
+          username: HanJuly
+          password: github@9569155
+
+
+management:
+  context-path: /config
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *
+
+
+info:
+  artifact: config-server
+  name: '@project.name@'
+  description: '@project.description@'
+  version: '@project.version@'
+  spring-boot-version: '@spring.boot.version@'
+  spring-cloud-version: '@spring.cloud.version@'

@@ -1,0 +1,18 @@
+server:
+  port: ${dev.eureka.server.port}
+
+eureka:
+  instance:
+    status-page-url-path: ${management.context-path}/info
+    health-check-url-path: ${management.context-path}/health
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8500/eureka/
+
+spring:
+  rabbitmq:
+    host: 192.168.48.128
+    port: 5672
+    password: guest
+    username: guest

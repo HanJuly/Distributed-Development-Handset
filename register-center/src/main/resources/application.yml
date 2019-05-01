@@ -1,0 +1,33 @@
+prod1:
+  eureka:
+    server:
+      port: 8501
+    hostname: eureka1.hw.com
+dev:
+  eureka:
+    server:
+      port: 8500
+    hostname: 127.0.0.1
+
+
+
+logging:
+  config: classpath:logback-spring.xml
+  path: ./logs/register-center
+
+# 公共配置
+spring:
+  profiles:
+    active: dev
+  application:
+    name: register-center
+
+
+
+info:
+  artifact: register-center
+  name: '@project.name@' #获取pom.xml文件中的属性
+  description: '@project.description@'
+  version: '@project.version@'
+  spring-boot-version: '@spring.boot.version@'
+  spring-cloud-version: '@spring.cloud.version@'
