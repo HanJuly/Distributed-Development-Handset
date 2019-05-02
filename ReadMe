@@ -7,3 +7,5 @@
 7.第三方登录
 8.单点登录
 9.基础的mybatis,统一异常处理机制，spring security集成
+10.jedis + redis
+11. rabbit通信
