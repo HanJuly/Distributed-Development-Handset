@@ -11,21 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 
-//@RefreshScope
-//@RestController
-public class TestConfigController {
-//    @Autowired
+@RestController
+public class TestRabbitmqController {
+    @Autowired
     AmqpTemplate amqpTemplate;
 
-//    @Value("${testconfig}")
-    private String testConfg;
 
-//    @RequestMapping("/getCofig")
-    public String from() {
-        return testConfg;
-    }
-
-//    @RequestMapping("/sendRabbitMessage")
+    @RequestMapping("/sendRabbitMessage")
     public String send(){
         amqpTemplate.convertAndSend("hello",String.format("Rabbit message %s",new Date().toString()));
         return "Send successfully.";
