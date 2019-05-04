@@ -12,7 +12,7 @@ eureka:
 
 spring:
   rabbitmq:
-    host: 192.168.48.128
+    host: 192.168.124.128
     port: 5672
     password: guest
     username: guest

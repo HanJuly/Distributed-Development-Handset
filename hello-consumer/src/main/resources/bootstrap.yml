@@ -1,5 +1,4 @@
 # eureka 主机/端口配置 start
-
 spring:
   application:
     name: hello-consumer
