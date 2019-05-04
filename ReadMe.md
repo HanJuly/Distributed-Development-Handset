@@ -1,3 +1,9 @@
+###加入nginx方式访问rabbitmq
+  配置改为nginx端口地址即可，
+  rabbitmq通讯参考hello-customer与hello-service
+  具体参考以下类：
+    RabbitConfig,TestRabbitmqController,RabbitReciever
+
 ###加入jedis工具,在common中。
  其他模块使用pom.xml配置方式使用。
  以后公共的接口，工具类都放在这里。
@@ -23,6 +29,7 @@
 6.权限管理后台
 7.第三方登录
 8.单点登录
-9.基础的mybatis,统一异常处理机制，spring security集成
-10.jedis + redis (ok)
-11. rabbit通信
+9.前端
+10.基础的mybatis,统一异常处理机制，spring security集成
+11.jedis + redis (ok)
+12. rabbit通信(ok)
