@@ -27,7 +27,7 @@
 ## 加入jedis工具,在common中。
  其他模块使用pom.xml配置方式使用。  
  以后公共的接口，工具类都放在这里。  
- ## 使用方式
+ ## Common模块使用方式
  1.首先将common模块mvn install  
  2.pom.xm加入依赖  
 3.在yaml文件中配置redis配置  
