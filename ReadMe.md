@@ -37,6 +37,6 @@
 8.单点登录
 9.前端
 10.spring security集成
-10.基础的mybatis,统一异常处理机制
+10.基础的mybatis,统一异常处理机制（ok）
 11.jedis + redis (ok)
 12. rabbit通信(ok)
