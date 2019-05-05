@@ -10,7 +10,8 @@
 10.spring security集成  
 10.基础的mybatis,统一异常处理机制（ok）  
 11.jedis + redis (ok)  
-12. rabbit通信(ok)  
+12. rabbit通信(ok)
+13. 灰度调用
 
 ## 配置自定义错误页面和统一的异常处理
    已加入Common模块，其他模块导入并配置扫描即可使用  
@@ -19,6 +20,7 @@
       博客：https://www.jianshu.com/p/3998ea8b53a8  
 
 ## 加入nginx方式访问rabbitmq
+  文档参考document+tools  
   配置改为nginx端口地址即可  
   rabbitmq通讯参考hello-customer与hello-service  
   具体参考以下类：  
