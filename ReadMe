@@ -1,3 +1,9 @@
+###配置自定义错误页面和统一的异常处理
+   已加入Common模块，其他模块导入并配置扫描即可使用
+   参考：
+      hello-service配置
+      博客：https://www.jianshu.com/p/3998ea8b53a8
+
 ###加入nginx方式访问rabbitmq
   配置改为nginx端口地址即可，
   rabbitmq通讯参考hello-customer与hello-service
@@ -18,7 +24,7 @@
 ###document+tools目录介绍
 1.pdf上传学习的书
 2.tools上传网上不好下在的工具或者源码包
-3.error-log上传搭建环境遇到的坑或者其他的坑
+3.error-log上传搭建环境遇到的坑或者其他的坑E
 
 
 ###待完成的点：
@@ -30,6 +36,7 @@
 7.第三方登录
 8.单点登录
 9.前端
-10.基础的mybatis,统一异常处理机制，spring security集成
+10.spring security集成
+10.基础的mybatis,统一异常处理机制
 11.jedis + redis (ok)
 12. rabbit通信(ok)
