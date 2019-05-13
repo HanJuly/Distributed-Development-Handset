@@ -1,21 +1,27 @@
 ## 待完成的点：
+### 基础功能
+1.权限管理后台
+2.第三方登录
+3.单点登录
+4.前端(参考文档 %50)
+5.spring security集成
+6.swagger
+
+
+### 可维护性
 1.admin未加集群监控
-2.pom.xml文件包需要整理到父类
-3.zuul路由过于简单(ok)
-4.限流功能(ok)
-6.权限管理后台  
-7.第三方登录  
-8.单点登录  
-9.前端(参考文档)
-10.spring security集成
-11.swagger
-12.基础的mybatis,统一异常处理机制（ok）
-13.jedis + redis (ok)
-14. rabbit通信(ok)
-15. 灰度调用
-16.jekens
-17.Docker打包项目
-18.Nepxion Discovery集成
+2. 灰度调用
+3.jekens
+4.Docker打包项目
+5.Nepxion Discovery集成  
+6.pom.xml文件包需要整理到父类
+
+### 已完成
+1.基础的mybatis,统一异常处理机制（ok）
+2.jedis + redis (ok)
+3. rabbit通信(ok)
+4.zuul路由过于简单(ok)
+5.限流功能(ok)
 
 ## 加入vue.js
    加入前端项目模板
