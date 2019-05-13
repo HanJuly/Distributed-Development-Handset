@@ -1,12 +1,12 @@
 ## 待完成的点：
-1.admin未加集群监控  
-2.pom.xml文件包需要整理到父类  
+1.admin未加集群监控
+2.pom.xml文件包需要整理到父类
 3.zuul路由过于简单(ok)
-4.限流功能
+4.限流功能(ok)
 6.权限管理后台  
 7.第三方登录  
 8.单点登录  
-9.前端  
+9.前端(参考文档)
 10.spring security集成
 11.swagger
 12.基础的mybatis,统一异常处理机制（ok）
@@ -16,7 +16,10 @@
 16.jekens
 17.Docker打包项目
 18.Nepxion Discovery集成
-19.Vue.js前端
+
+## 加入vue.js
+   加入前端项目模板
+   移步 https://github.com/HanJuly/hw-front-vue/
 
 ## Zuul 更换为gateway，并使用Redis进行限流
 
@@ -31,7 +34,7 @@
   配置改为nginx端口地址即可  
   rabbitmq通讯参考hello-customer与hello-service  
   具体参考以下类：  
-    RabbitConfig,TestRabbitmqController,RabbitReciever  
+    RabbitConfig,TestRabbitmqController,RabbitReciever  S
 
 ## 加入jedis工具,在common中。
  其他模块使用pom.xml配置方式使用。  
