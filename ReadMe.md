@@ -2,7 +2,7 @@
 1.admin未加集群监控  
 2.pom.xml文件包需要整理到父类  
 3.zuul路由过于简单(ok)
-4.限流功能  
+4.限流功能
 6.权限管理后台  
 7.第三方登录  
 8.单点登录  
@@ -16,8 +16,9 @@
 16.jekens
 17.Docker打包项目
 18.Nepxion Discovery集成
+19.Vue.js前端
 
-## Zuul 更换为gateway
+## Zuul 更换为gateway，并使用Redis进行限流
 
 ## 配置自定义错误页面和统一的异常处理
    已加入Common模块，其他模块导入并配置扫描即可使用  
