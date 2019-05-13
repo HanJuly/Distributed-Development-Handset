@@ -1,4 +1,4 @@
-package com.han.helloconsumer;
+package com.hw.common.util;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

@@ -24,4 +24,3 @@ spring:
           initial-interval: 5000 #重试间隔时间（单位毫秒）
           max-interval: 1200000 #重试最大时间间隔（单位毫秒）
           multiplier: 5 #应用于前一重试间隔的乘法器
-     fail-fast: true

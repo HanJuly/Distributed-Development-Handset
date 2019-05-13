@@ -5,7 +5,7 @@
 3.单点登录
 4.前端(参考文档 %50)
 5.spring security集成
-6.swagger
+
 
 
 ### 可维护性
@@ -13,7 +13,7 @@
 2. 灰度调用
 3.jekens
 4.Docker打包项目
-5.Nepxion Discovery集成  
+5.Nepxion Discovery集成
 6.pom.xml文件包需要整理到父类
 
 ### 已完成
@@ -22,6 +22,10 @@
 3. rabbit通信(ok)
 4.zuul路由过于简单(ok)
 5.限流功能(ok)
+6.swagger(ok)
+
+## swagger接入
+   参考Hello-customer及文档
 
 ## 加入vue.js
    加入前端项目模板
