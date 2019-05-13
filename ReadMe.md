@@ -2,27 +2,27 @@
 ### 基础功能
 1.权限管理后台  
 2.第三方登录  
-3.单点登录
-4.前端(参考文档 %50)
-5.spring security集成
+3.单点登录  
+4.前端(参考文档 %50)  
+5.spring security集成  
 
 
 
 ### 可维护性
-1.admin未加集群监控
-2. 灰度调用
-3.jekens
-4.Docker打包项目
-5.Nepxion Discovery集成
-6.pom.xml文件包需要整理到父类
+1.admin未加集群监控  
+2. 灰度调用  
+3.jekens  
+4.Docker打包项目  
+5.Nepxion Discovery集成  
+6.pom.xml文件包需要整理到父类  
 
 ### 已完成
-1.基础的mybatis,统一异常处理机制（ok）
-2.jedis + redis (ok)
-3. rabbit通信(ok)
-4.zuul路由过于简单(ok)
-5.限流功能(ok)
-6.swagger(ok)
+1.基础的mybatis,统一异常处理机制（ok）  
+2.jedis + redis (ok)  
+3. rabbit通信(ok)  
+4.zuul路由过于简单(ok)  
+5.限流功能(ok)  
+6.swagger(ok)  
 
 ## swagger接入
    参考Hello-customer及文档
