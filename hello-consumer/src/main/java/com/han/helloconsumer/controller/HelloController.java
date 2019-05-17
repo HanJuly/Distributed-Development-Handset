@@ -1,6 +1,7 @@
 package com.han.helloconsumer.controller;
 
 import com.han.helloconsumer.service.HelloServiceCommand;
+import com.han.helloconsumer.service.HelloServie;
 import com.hw.common.redis.RedisUtil;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import org.slf4j.Logger;
@@ -27,14 +28,17 @@ public class HelloController {
 
     @GetMapping("/getHello")
     public String getHello() {
-        HystrixRequestContext.initializeContext();
+        return getString();
+    }
+
+    private String getString() {
         LOGGER.info("Test logback for zipkin");
-        System.out.println(helloServie.getHello(123l));
-        System.out.println(helloServie.getHello(123l));
-        testRedis();
-        helloServie.updateHello(123L);
-        System.out.println("After cache remove:" + helloServie.getHello(123l));
-        return helloServie.getHello(123l);
+        System.out.println(helloServie.getHello(1213L));
+        System.out.println(helloServie.getHello(1213L));
+//        testRedis();
+//        helloServie.updateHello(123L);
+        System.out.println("After cache remove:" + helloServie.getHello(1213L));
+        return helloServie.getHello(1213L);
     }
 
     private  void  testRedis() {
