@@ -20,15 +20,17 @@
 2.jedis + redis (ok)  
 3. rabbit通信(ok)  
 4.zuul路由过于简单(ok)  
-5.限流功能(ok)
-6.swagger(ok)
-7.灰度调用(ok)
+5.限流功能(ok)  
+6.swagger(ok)  
+7.灰度调用(ok)  
 
 ## 灰度调用
-   基于负载均衡+拦截器+metaMap
+   基于负载均衡+拦截器+metaMap  
    请求（携带header参数：version = v1）---->接受拦截器----->负载均衡（通过metamap筛选对应版本服务）---->发送拦截器（设置请求头给下一个服务）
-
-## swagger接入
+   
+   参考原作者github项目：https://github.com/goofly/springcloud-gray/tree/master/springcloud-gray
+   
+##  Swagger接入
    参考Hello-customer及文档
 
 ## 加入vue.js
