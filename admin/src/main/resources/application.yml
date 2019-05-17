@@ -1,0 +1,54 @@
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+server:
+  port: 3333
+  servlet:
+    context-path: /admin
+spring:
+  application:
+    name: admin-watcher
+  jmx:
+    default-domain: admin
+  boot:
+    admin:
+      notify:
+        mail:
+          from: "15761632106@163.com" #邮件发送方账户abc@qq.com
+          to: "1114549817@qq.com" #接受邮件的账户def@qq.com
+      client:
+        url: http://localhost:3333
+  mail:
+    host: smtp.163.com
+    username: "15761632106@163.com" #邮件发送方的账户如abc@qq.com
+    password: "wangyi123" #授权码，在各邮箱设置界面进行设置
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+eureka:
+  instance:
+    name: admin-watcher
+    lease-renewal-interval-in-seconds: 10
+    health-check-url-path: /admin/actuator/health
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8500/eureka/
+    registry-fetch-interval-seconds: 5
+
+
+
+
+
+
+

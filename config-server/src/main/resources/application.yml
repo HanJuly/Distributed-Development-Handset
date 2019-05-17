@@ -30,14 +30,19 @@ spring:
           search-paths: '{application}'
           username: HanJuly
           password: github@9569155
-
-
+  boot:
+    admin:
+      client:
+        url: http://localhost:3333
 management:
   context-path: /config
-#  endpoints:
-#    web:
-#      exposure:
-#        include: *
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 
 info:
