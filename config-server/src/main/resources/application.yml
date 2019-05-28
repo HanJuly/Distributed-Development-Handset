@@ -26,7 +26,7 @@ spring:
       server:
         git:
           uri: https://github.com/HanJuly/config-repo
-#          uri: https://gitee.com/zuihou111/zuihou-admin-cloud-config-repo
+#          uri: file://D:\Recursion\project\config-repo
           search-paths: '{application}'
           username: HanJuly
           password: github@9569155

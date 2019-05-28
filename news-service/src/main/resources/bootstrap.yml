@@ -1,0 +1,28 @@
+# eureka 主机/端口配置 start
+spring:
+  application:
+    name: News-Service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      profile: ${spring.profiles.active}
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+        username: HanJuly
+        password: github@9569155
+      fail-fast: true
+      retry:
+        initial-interval: 2000
+        max-interval: 10000
+        multiplier: 2
+        max-attempts: 10
+
+server:
+  ssl:
+    key-store-type: JKS
+    key-store: classpath:CAS.keystore
+    key-store-password: 123456
+    enabled: true
