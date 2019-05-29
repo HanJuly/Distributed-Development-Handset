@@ -1,0 +1,52 @@
+{
+	"host": "皇家马德里",
+	"hostImage": "http://image.suning.cn/uimg/SDSP/team/249.png?v=209912316666",
+	"guest": "皇家贝蒂斯",
+	"guestImage": "http://image.suning.cn/uimg/SDSP/team/248.png?v=2099123199999",
+	"date": "5-28 00:30 西甲",
+	"socre": "0-2",
+	"state": "已结束",
+	"statistics": [
+		{
+			"host": "47%",
+			"note": "控球率",
+			"guest": "53%"
+		},
+		{
+			"host": "9",
+			"note": "射门",
+			"guest": "9"
+		},
+		{
+			"host": "2",
+			"note": "封堵",
+			"guest": "7"
+		},
+		{
+			"host": "4",
+			"note": "黄牌",
+			"guest": "1"
+		},
+		{
+			"host": "10",
+			"note": "任意球",
+			"guest": "15"
+		},
+		{
+			"host": "1",
+			"note": "越位",
+			"guest": "4"
+		},
+		{
+			"host": "1",
+			"note": "封堵",
+			"guest": "0"
+		},
+		{
+			"host": "1",
+			"note": "角球",
+			"guest": "5"
+		}
+
+	]
+}
