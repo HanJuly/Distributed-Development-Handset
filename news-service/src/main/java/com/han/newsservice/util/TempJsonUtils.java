@@ -11,9 +11,9 @@ import java.util.List;
 public class TempJsonUtils {
     private static final Logger NEWS_LOGGER = LoggerFactory.getLogger(NewsController.class);
 
-    public static   <T> T fromFile(String path,Class<T> c){
+    public static   <T> T fromFile(String filePath,Class<T> c){
         try {
-            StringBuilder json = getStringBuilder(path);
+            StringBuilder json = getStringBuilder(filePath);
 
             NEWS_LOGGER.info("Json string from file: \n"+json.toString());
 
@@ -26,9 +26,9 @@ public class TempJsonUtils {
         return null;
     }
 
-    public static   <T> List<T> listFromFile(String path, Class<T> c){
+    public static   <T> List<T> listFromFile(String filePath, Class<T> c){
         try {
-            StringBuilder json = getStringBuilder(path);
+            StringBuilder json = getStringBuilder(filePath);
 
             NEWS_LOGGER.info("Json string from file: \n"+json.toString());
 
@@ -41,15 +41,30 @@ public class TempJsonUtils {
         return null;
     }
 
-    private static StringBuilder getStringBuilder(String path) throws IOException {
-        FileInputStream file = new FileInputStream(path);
-        BufferedInputStream bufferedInputStream = new BufferedInputStream(file);
-        byte[] buff = new byte[1024];
-        StringBuilder json = new StringBuilder();
-        while (bufferedInputStream.read(buff) != -1) {
-            json.append(new String(buff));
+    private static StringBuilder getStringBuilder(String filePath) throws IOException {
+        InputStream inputStream = null;
+        BufferedInputStream bufferedInputStream = null;
+        try {
+             inputStream = TempJsonUtils.class.getResourceAsStream(filePath);
+             bufferedInputStream = new BufferedInputStream(inputStream);
+            byte[] buff = new byte[1024];
+            StringBuilder json = new StringBuilder();
+            while (bufferedInputStream.read(buff) != -1) {
+                json.append(new String(buff));
+            }
+            return json;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+
+            if(bufferedInputStream != null){
+                bufferedInputStream.close();
+            }
+            if(inputStream != null){
+                inputStream.close();
+            }
         }
-        return json;
+        return null;
     }
 
 }

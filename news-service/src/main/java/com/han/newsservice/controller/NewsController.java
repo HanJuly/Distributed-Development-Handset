@@ -26,7 +26,7 @@ public class NewsController {
     @ResponseBody
     @GetMapping("/list")
     public ResponseBase list(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-        httpServletResponse.addHeader("Access-Control-Allow-Origin", "http://localhost:9999");
+        httpServletResponse.addHeader("Access-Control-Allow-Origin", "*");
         return newsService.getNewsList();
     }
 

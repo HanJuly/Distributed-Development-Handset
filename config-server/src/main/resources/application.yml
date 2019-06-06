@@ -24,12 +24,14 @@ spring:
   cloud:
     config:
       server:
+        native:
+#          search-locations: D:\Recursion\project\config-repo'
         git:
           uri: https://github.com/HanJuly/config-repo
-#          uri: file://D:\Recursion\project\config-repo
           search-paths: '{application}'
           username: HanJuly
           password: github@9569155
+
   boot:
     admin:
       client:

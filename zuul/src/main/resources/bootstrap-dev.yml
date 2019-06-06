@@ -1,24 +1,11 @@
 spring:
   profiles:
     active: dev
-  redis:
-    host: 192.168.124.129
-    port: 6379
-    timeout: 20000
-#    cluster:
-#      nodes: 192.168.124.129:6380,192.168.124.129:6381,192.168.124.129:6382,192.168.124.129:6383,192.168.124.129:6384
-#      maxRedirects: 6
-    fail-fast: true
-  pool:
-      max-active: 8
-      min-idle: 0
-      max-idle: 8
-      max-wait: -1
   cloud:
       gateway:
         discovery:
           locator:
-            enabled: false
+            enabled: true #开启默认路由
             lowerCaseServiceId: true
         routes:
         - id: limit_route

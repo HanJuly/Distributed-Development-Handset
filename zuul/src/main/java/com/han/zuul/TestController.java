@@ -14,18 +14,19 @@ public class TestController {
     @Autowired
     RedisUtil redisUtil;
 
+
     @RequestMapping("/testRedis")
-    public String testRedisReq(){
+    public String testRedisReq() {
         testRedis();
         return "ok";
     }
 
-    private  void  testRedis() {
+    private void testRedis() {
 
         Map<String, String> testMap = new HashMap();
         testMap.put("name", "han");
         testMap.put("age", "21");
         testMap.put("class", "一般");
-        redisUtil.hmset("commonRedis",testMap);
+        redisUtil.hmset("commonRedis", testMap);
     }
 }

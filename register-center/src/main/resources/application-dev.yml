@@ -1,6 +1,5 @@
 server:
   port: ${dev.eureka.server.port}
-
 spring:
   profiles: dev
 
@@ -17,3 +16,5 @@ eureka:
     fetchRegistry: false       # 单机模式 设置为false
   instance:
     hostname: ${dev.eureka.hostname}    # 指定该Eureka实例的主机名
+
+

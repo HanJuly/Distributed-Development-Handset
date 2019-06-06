@@ -1,7 +1,7 @@
 # eureka 主机/端口配置 start
 spring:
   application:
-    name: News-Service
+    name: news-service
   profiles:
     active: dev
   cloud:
@@ -20,9 +20,3 @@ spring:
         multiplier: 2
         max-attempts: 10
 
-server:
-  ssl:
-    key-store-type: JKS
-    key-store: classpath:CAS.keystore
-    key-store-password: 123456
-    enabled: true
